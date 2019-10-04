@@ -18,7 +18,7 @@ def main():
         if (len(files)>0):
             source_file = root + '/' + files[0]
             # filters for png, gif, and jpg
-            if source_file.endswith(('.png' or '.gif' or '.jpg')):
+            if source_file.endswith('.png' or '.gif' or '.jpg'):
                 destination_file = 'new_emojis/' + root[9:] + source_file[-4:]          
                 copyfile(source_file, destination_file)
 
