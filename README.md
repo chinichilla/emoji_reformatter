@@ -42,4 +42,3 @@ We'll now use Emoji Renamer to rename the files with their original workspace's 
 
 * Inspiration: https://gist.github.com/lmarkus/8722f56baf8c47045621 
 * Renaming Files: https://www.geeksforgeeks.org/rename-multiple-files-using-python/ 
-
