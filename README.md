@@ -20,7 +20,7 @@ Guide to export and import your custom emojis from one slack workspace to anothe
 
 We'll now use Emoji Renamer to rename the files with their original workspace's names. 
 
-1. Now `github-clone` the repo.
+1. Now `git clone` the repo.
 
 2. Rename **T024FPYBQ** to **emojis**.
 
