@@ -2,7 +2,7 @@
 
 Guide to export and import your custom emojis from one slack workspace to another without being an admin. This renamer currently supports jpg, gif, and png. Let me know if you'd like more file types, and I'll update the python function. 
 
-## Export Your Emojis in Bulk from the Old Workspace
+### Export Your Emojis in Bulk from the Old Workspace
 
 1. Install [Save All Resources](https://chrome.google.com/webstore/detail/save-all-resources/abpdnfjocnmdomablahdcfnoggeeiedb?hl=en-US) on Chrome extension.
 
@@ -14,7 +14,7 @@ Guide to export and import your custom emojis from one slack workspace to anothe
 
 5. Now scroll all the way through your workspace's emojis. This will store them in your **/top/emoji.slack-edge.com/T024FPYBQ/** folder. You can view it by going to the **Sources** tab in Developer Tools.
 
-6. Once you have collected all the emojis, click Download on the **ResourcesSaver** tab. 
+6. Once you have collected all the emojis, click "Save All Resources" on the **ResourcesSaver** tab to download the zip file.
 
 ### Using the Emoji Renamer 
 
@@ -34,7 +34,7 @@ We'll now use the Emoji Renamer script to rename the files with their original w
 
 2. Navigate to your second workspace's custom emoji page and drop the renamed files into Neutral Face Emoji Tools' uploader. Slack throttles your uploads, so you will need to upload in batches. 
 
-## Authors
+### Authors
 
 [Dan Chiniara](https://github.com/djchinia)
 
