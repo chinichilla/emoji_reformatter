@@ -2,7 +2,7 @@
 
 Guide to export and import your custom emojis from one slack workspace to another without being an admin. This reformatter currently supports jpg, gif, and png. Let me know if you'd like more file types, and I'll update the python function. 
 
-### Export Your Emojis in Bulk from the Old Workspace
+### Export Your Emojis in Bulk from the First Workspace
 
 1. Install [Save All Resources](https://chrome.google.com/webstore/detail/save-all-resources/abpdnfjocnmdomablahdcfnoggeeiedb?hl=en-US) on Chrome extension.
 
@@ -26,9 +26,9 @@ We'll now use the Emoji Reformatter script to reformat the files with their orig
 
 3. Place **emojis** inside the **emoji_reformatter** directory.
 
-4. Run `python emoji_reformatter.py`. This will create a folder called **new_emojis** with all the refomatted emoji files.
+4. Run `python emoji_reformatter.py`. This will create a folder called **formatted_emojis** with all the refomatted emoji files.
 
-## Import Your Emojis in Bulk into the New Workspace
+## Import Your Emojis in Bulk into the Second Workspace
 
 1. Download the [Neutral Face Emoji Tools](https://chrome.google.com/webstore/detail/neutral-face-emoji-tools/anchoacphlfbdomdlomnbbfhcmcdmjej) Chrome extension.
 
