@@ -6,24 +6,36 @@ def main():
     # check if emojis folder exists and print message if false
     rootDir = './emojis'
     if(os.path.isdir(rootDir)):
-        # make formatted folder called formatted_emojis if necessary
+        # make reformatted folder called reformatted_emojis if necessary
         path = os.getcwd()
         try: 
-            os.makedirs(path + '/formatted_emojis')
-            print('formatted_emojis folder created.')
+            os.makedirs(path + '/reformatted_emojis')
+            print('reformatted_emojis folder created.')
         except:
-            print('formatted_emojis folder already exists.')
+            print('reformatted_emojis folder already exists.')
+        
+        reformatted_files = 0
+        unformatted_dirs = []
         # go through file structure to reformat and reduce the number of folders in rootDir
-        # destination_file is inside formatted_emojis rather than being nested in another folder
+        # destination_file is inside reformatted_emojis rather than being nested in another folder
         for root, dirs, files in os.walk(rootDir, topdown=False):
             # checks for at least one file in an array (there should only be one in this case)
             if len(files) > 0:
                 source_file = root + '/' + files[0]
                 # filters for png, gif, and jpg (let me know if slack uses other file types)
                 if (source_file.endswith('.png') or source_file.endswith('.gif') or source_file.endswith('.jpg')):
-                    destination_file = 'formatted_emojis/' + root[len(rootDir)+1:] + source_file[-4:]          
+                    reformatted_files += 1
+                    destination_file = 'reformatted_emojis/' + root[len(rootDir)+1:] + source_file[-4:]          
                     copyfile(source_file, destination_file)
-        print('The emoji_reformatter has finished running.')
+                else:
+                    unformatted_dirs.append(root[len(rootDir)+1:])
+            else:
+                unformatted_dirs.append(root[len(rootDir)+1:])
+        print('The emoji_reformatter has finished running. ' + str(reformatted_files) + ' of ' + str(len(dirs)) + ' files have been reformatted.')
+        # troubleshooting: give folder names for files that still need to be reformatted (>1 since ./emojis is always added to the array)
+        if (len(unformatted_dirs) > 1):
+            seperator = ', '
+            print('The following folders were not reformatted: ' + str(seperator.join(unformatted_dirs))[:-2])
     else:
         print('The emojis folder does not exist. Please copy it into the emoji_reformatter folder or look at the README.')
 
