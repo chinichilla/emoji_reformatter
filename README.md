@@ -1,6 +1,6 @@
-# Bulk Emoji Renamer
+# Bulk Emoji Reformatter
 
-Guide to export and import your custom emojis from one slack workspace to another without being an admin. This renamer currently supports jpg, gif, and png. Let me know if you'd like more file types, and I'll update the python function. 
+Guide to export and import your custom emojis from one slack workspace to another without being an admin. This reformatter currently supports jpg, gif, and png. Let me know if you'd like more file types, and I'll update the python function. 
 
 ### Export Your Emojis in Bulk from the Old Workspace
 
@@ -16,23 +16,23 @@ Guide to export and import your custom emojis from one slack workspace to anothe
 
 6. Once you have collected all the emojis, click "Save All Resources" on the **ResourcesSaver** tab to download the zip file.
 
-### Using the Emoji Renamer 
+### Using the Emoji Reformatter 
 
-We'll now use the Emoji Renamer script to rename the files with their original workspace's names. Their folders currently have the files' original emoji names. They should have a similar file structure as **examples**. **favorites** contains some of my favorite slack emojis.
+We'll now use the Emoji Reformatter script to reformat the files with their original workspace's names. Their folders currently have the files' original emoji names. They should have a similar file structure as **examples**. **favorites** contains some of my favorite slack emojis.
 
 1. Now `git clone` the repo.
 
-2. Rename **T024FPYBQ** to **emojis**. (Note: Feel free to test the repo's functionality by renaming **examples** to **emojis**.)
+2. Reformat **T024FPYBQ** to **emojis**. (Note: Feel free to test the repo's functionality by renaming **examples** to **emojis**.)
 
-3. Place **emojis** inside the **emoji_renamer** directory.
+3. Place **emojis** inside the **emoji_reformatter** directory.
 
-4. Run `python emoji_renamer.py`. This will create a folder called **new_emojis** with all the renamed emoji files.
+4. Run `python emoji_reformatter.py`. This will create a folder called **new_emojis** with all the refomatted emoji files.
 
 ## Import Your Emojis in Bulk into the New Workspace
 
 1. Download the [Neutral Face Emoji Tools](https://chrome.google.com/webstore/detail/neutral-face-emoji-tools/anchoacphlfbdomdlomnbbfhcmcdmjej) Chrome extension.
 
-2. Navigate to your second workspace's custom emoji page and drop the renamed files into Neutral Face Emoji Tools' uploader. Slack throttles your uploads, so you will need to upload in batches. 
+2. Navigate to your second workspace's custom emoji page and drop the reformatted files into Neutral Face Emoji Tools' uploader. Slack throttles your uploads, so you will need to upload in batches. 
 
 ### Authors
 
