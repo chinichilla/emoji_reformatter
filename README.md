@@ -1,4 +1,6 @@
-# Bulk Emoji Reformatter
+# Bulk Emoji Reformatter 
+
+[![How to Bulk Transfer Slack Emojis without Admin Privileges](https://miro.medium.com/max/1950/1*sHrIMbMBBTQRFqe12A_sAQ.png)](https://medium.com/@dan.chiniara/how-to-bulk-transfer-slack-emojis-without-admin-privileges-e0eb866770b3)
 
 Guide to export and import your custom emojis from one slack workspace to another without being an admin. This reformatter currently supports jpg, gif, and png. Let me know if you'd like more file types, and I'll update the python function. 
 
