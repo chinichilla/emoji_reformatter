@@ -12,7 +12,7 @@ Guide to export and import your custom emojis from one slack workspace to anothe
 
 4. Navigate to your workspace's custom emoji page: 'https://[workspace_name].slack.com/customize/emoji'.
 
-5. Now scroll all the way through your workspace's emojis. This will store them in your **/top/emoji.slack-edge.com/T024FPYBQ/** folder. You can view it by going to the **Sources** tab in Developer Tools.
+5. Now scroll all the way through your workspace's emojis. This will store them in your **/top/emoji.slack-edge.com/T0#####/** folder. You can view it by going to the **Sources** tab in Developer Tools.
 
 6. Once you have collected all the emojis, click "Save All Resources" on the **ResourcesSaver** tab to download the zip file.
 
@@ -22,13 +22,13 @@ We'll now use the Emoji Reformatter script to reformat the files with their orig
 
 1. Now `git clone` the repo.
 
-2. Reformat **T024FPYBQ** to **emojis**. (Note: Feel free to test the repo's functionality by renaming **examples** to **emojis**.)
+2. Rename **T0#####** to **emojis**. (Note: Feel free to test the repo's functionality by renaming **examples** to **emojis**.)
 
 3. Place **emojis** inside the **emoji_reformatter** directory.
 
 4. Run `python emoji_reformatter.py`. This will create a folder called **reformatted_emojis** with all the refomatted emoji files. It will print out the number of reformatted files and the names of the folders that still need to be. 
 
-## Import Your Emojis in Bulk into the Second Workspace
+### Import Your Emojis in Bulk into the Second Workspace
 
 1. Download the [Neutral Face Emoji Tools](https://chrome.google.com/webstore/detail/neutral-face-emoji-tools/anchoacphlfbdomdlomnbbfhcmcdmjej) Chrome extension.
 
