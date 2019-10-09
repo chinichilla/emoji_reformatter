@@ -2,7 +2,9 @@
 
 [![Medium Post Link](https://miro.medium.com/max/1950/1*sHrIMbMBBTQRFqe12A_sAQ.png)](https://medium.com/@dan.chiniara/how-to-bulk-transfer-slack-emojis-without-admin-privileges-e0eb866770b3)
 
-Guide to export and import your custom emojis from one slack workspace to another without being an admin. This reformatter currently supports jpg, gif, and png. Let me know if you'd like more file types, and I'll update the python function. 
+Guide to export and import your custom emojis from one slack workspace to another without being an admin. This reformatter currently supports jpg, gif, and png. Let me know if you'd like more file types, and I'll update the python script. 
+
+A post with screenshots can be found on [Medium](https://medium.com/@dan.chiniara/how-to-bulk-transfer-slack-emojis-without-admin-privileges-e0eb866770b3).
 
 ### Export Your Emojis in Bulk from the First Workspace
 
@@ -40,7 +42,7 @@ We'll now use the Emoji Reformatter script to reformat the files with their orig
 
 * [Dan Chiniara](https://github.com/djchinia)
 
-## Acknowledgments
+### Acknowledgments
 
 * Extracting Emojis from Slack (Firefox): https://gist.github.com/lmarkus/8722f56baf8c47045621 
 * Renaming Files: https://www.geeksforgeeks.org/rename-multiple-files-using-python/ 
