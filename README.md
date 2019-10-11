@@ -30,7 +30,7 @@ We'll now use the Emoji Reformatter script to reformat the files with their orig
 
 3. Place **emojis** inside the **emoji_reformatter** directory.
 
-4. Run `python emoji_reformatter.py`. This will create a folder called **reformatted_emojis** with all the refomatted emoji files. It will print out the number of reformatted files and the names of the folders that still need to be. 
+4. Run `python emoji_reformatter.py`. This will create a folder called **reformatted_emojis** with all the refomatted emoji files. It will print out the number of reformatted files and the names of the folders that still need to be modified (see Medium article for more documentation).  
 
 ### Import Your Emojis in Bulk into the Second Workspace
 
