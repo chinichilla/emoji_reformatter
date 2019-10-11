@@ -34,8 +34,8 @@ def main():
         print('The emoji_reformatter has finished running. ' + str(reformatted_files) + ' of ' + str(len(dirs)) + ' files have been reformatted.')
         # troubleshooting: give folder names for files that still need to be reformatted (>1 since ./emojis is always added to the array)
         if (len(unformatted_dirs) > 1):
-            seperator = ', '
-            print('The following folders were not reformatted: ' + str(seperator.join(unformatted_dirs))[:-2])
+            separator = ', '
+            print('The following folders were not reformatted: ' + str(separator.join(unformatted_dirs))[:-2])
     else:
         print('The emojis folder does not exist. Please copy it into the emoji_reformatter folder or look at the README.')
 
