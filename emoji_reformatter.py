@@ -25,7 +25,9 @@ def main():
                 # filters for png, gif, and jpg (let me know if slack uses other file types)
                 if (source_file.endswith('.png') or source_file.endswith('.gif') or source_file.endswith('.jpg')):
                     reformatted_files += 1
-                    destination_file = 'reformatted_emojis/' + root[len(rootDir)+1:] + source_file[-4:]          
+                    root_converted = root[len(rootDir)+1:].replace("%27", "'")
+                    root_converted = root_converted.replace("%2B", "+")
+                    destination_file = 'reformatted_emojis/' + root_converted + source_file[-4:]
                     copyfile(source_file, destination_file)
                 else:
                     unformatted_dirs.append(root[len(rootDir)+1:])
