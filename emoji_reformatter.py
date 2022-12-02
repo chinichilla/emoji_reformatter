@@ -26,6 +26,7 @@ def main():
                 if (source_file.endswith('.png') or source_file.endswith('.gif') or source_file.endswith('.jpg')):
                     reformatted_files += 1
                     root_converted = root[len(rootDir)+1:].replace("%27", "'")
+                    root_converted = root_converted.replace("%2B", "+")
                     destination_file = 'reformatted_emojis/' + root_converted + source_file[-4:]
                     copyfile(source_file, destination_file)
                 else:
